@@ -1,0 +1,29 @@
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No
+[alias]
+	clog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	mer = merge --no-ff
+	co = checkout
+	ca = commit -a
+	s = status
+	br = branch
+	bra = branch -a
+	ps = push
+	pso = push origin
+	pl = pull --no-ff
+	plo = pull --no-ff origin
+	ft = fetch
+	fto = fetch -p origin
+[user]
+	name = Zhuang Sirui
+	email = siriusibunny@gmail.com
+[core]
+	excludesfile = /Users/zhuangsirui/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
