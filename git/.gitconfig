@@ -3,7 +3,7 @@
 [difftool]
 	prompt = No
 [alias]
-	clog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	logger = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	mer = merge --no-ff
 	co = checkout
 	ca = commit -a
@@ -21,6 +21,7 @@
 	email = siriusibunny@gmail.com
 [core]
 	excludesfile = /Users/zhuangsirui/.gitignore_global
+	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
