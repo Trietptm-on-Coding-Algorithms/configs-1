@@ -41,3 +41,5 @@ source $ZSH/oh-my-zsh.sh
 if [ -r "$HOME/.bashrc" ]; then
 	source "$HOME/.bashrc"
 fi
+
+alias reload="source $HOME/.zshrc"
