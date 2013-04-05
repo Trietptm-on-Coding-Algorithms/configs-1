@@ -38,8 +38,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-if [ -r "$HOME/.bashrc" ]; then
-	source "$HOME/.bashrc"
-fi
+[[ -r "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 
 alias reload="source $HOME/.zshrc"

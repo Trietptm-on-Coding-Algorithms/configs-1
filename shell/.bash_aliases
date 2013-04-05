@@ -14,3 +14,8 @@ alias 'ps?'='ps aux | grep'
 # alias for ping {{{
 alias p="ping"
 # }}}
+
+# alias for spartan servers {{{
+spServer="$HOME/Projects/tap4fun/server-alias/sp.server"
+[[ -r $spServer ]] && source $spServer
+# }}}
