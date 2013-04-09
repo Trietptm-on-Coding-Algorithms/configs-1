@@ -41,6 +41,5 @@ source $ZSH/oh-my-zsh.sh
 [[ -r "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 
 function reload() {
-	source "/etc/profile"
 	source "$HOME/.zshrc"
 }
