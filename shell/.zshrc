@@ -40,4 +40,7 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -r "$HOME/.bashrc" ]] && source "$HOME/.bashrc"
 
-alias reload="source $HOME/.zshrc"
+function reload() {
+	source "/etc/profile"
+	source "$HOME/.zshrc"
+}

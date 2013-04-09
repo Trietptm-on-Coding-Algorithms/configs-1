@@ -1,6 +1,7 @@
 # aliases for tmux {{{
 alias tn="tmux new -s"
 alias ta="tmux a -t"
+alias t="tmux"
 # }}}
 
 # aliases for git {{{
