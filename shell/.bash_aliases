@@ -16,6 +16,10 @@ alias 'ps?'='ps aux | grep'
 alias p="ping"
 # }}}
 
+# fix rake bug on zsh {{{
+alias rake='noglob rake'
+# }}}
+
 # alias for spartan servers {{{
 spServer="$HOME/Projects/tap4fun/server-alias/sp.server"
 [[ -r $spServer ]] && source $spServer
