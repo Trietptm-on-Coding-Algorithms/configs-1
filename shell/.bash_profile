@@ -6,3 +6,6 @@
 
 # Add user bin PATH
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
+
+# Add GVM into a shell session
+[[ -f $HOME/.gvm/scripts/gvm ]] && source "$HOME/.gvm/scripts/gvm"

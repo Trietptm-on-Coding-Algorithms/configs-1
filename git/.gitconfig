@@ -4,7 +4,7 @@
 	prompt = No
 [alias]
 	logger = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	mer = merge --no-ff
+	;mer = merge --no-ff
 	co = checkout
 	ca = commit -a
 	s = status

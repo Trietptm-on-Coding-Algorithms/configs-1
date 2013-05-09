@@ -32,3 +32,10 @@ function del () {
 	mv $1 ${trashDir}
 }
 # }}}
+
+alias grep="grep -I"
+
+function start-server () {
+	[ $1 = 'mysql' ] && mysql.server start
+	[ $1 = 'redis' ] && redis-server /etc/redis/default.conf
+}
