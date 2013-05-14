@@ -9,3 +9,6 @@
 
 # Add GVM into a shell session
 [[ -f $HOME/.gvm/scripts/gvm ]] && source "$HOME/.gvm/scripts/gvm"
+
+# Require node js version manager
+[[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
