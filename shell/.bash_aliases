@@ -39,3 +39,5 @@ function start-server () {
 	[ $1 = 'mysql' ] && mysql.server start
 	[ $1 = 'redis' ] && redis-server /etc/redis/default.conf
 }
+
+alias add-ssh="ssh-add ~/.ssh/id_rsa"
