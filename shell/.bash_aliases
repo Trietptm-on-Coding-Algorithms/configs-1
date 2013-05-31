@@ -41,3 +41,11 @@ function start-server () {
 }
 
 alias add-ssh="ssh-add ~/.ssh/id_rsa"
+
+# Get ip address only {{{
+# e.g. `getip en0`
+function getip() {
+	ip=`ifconfig $1 | awk '$2 ~ /^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]{1,2})(\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[0-9]{1,2})){3}$/ {print $2}'`
+	[ -n "$ip" ] && echo ${ip}
+}
+# }}}
