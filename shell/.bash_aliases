@@ -35,9 +35,17 @@ function del () {
 
 alias grep="grep -I"
 
+alias up="uptime"
+
 function start-server () {
-	[ $1 = 'mysql' ] && mysql.server start
-	[ $1 = 'redis' ] && redis-server /etc/redis/default.conf
+	[ $1 = 'mysql' ] && mysql.server start && echo "MySQL start"
+	[ $1 = 'redis' ] && redis-server /etc/redis/default.conf && echo "Redis start"
+}
+
+function start() {
+	for p in "$@"; do
+		start-server ${p}
+	done
 }
 
 alias add-ssh="ssh-add ~/.ssh/id_rsa"
