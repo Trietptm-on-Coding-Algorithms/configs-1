@@ -1,0 +1,5 @@
+#!/bin/sh
+# $1 contains the file with the commit msg we're about to edit.
+# We'll just completely clobber it for this example.
+
+echo "Hello" > "$1"
