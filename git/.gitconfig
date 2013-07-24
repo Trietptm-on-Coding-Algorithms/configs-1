@@ -30,3 +30,5 @@
 	trustExitCode = true
 [push]
 	default = matching
+[merge]
+	tool = vimdiff

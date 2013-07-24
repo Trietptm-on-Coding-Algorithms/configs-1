@@ -1,3 +1,5 @@
+alias grep="grep -I"
+
 # aliases for tmux {{{
 alias tn="tmux new -s"
 alias ta="tmux a -t"
@@ -9,7 +11,7 @@ alias gd="git diff | tig"
 # }}}
 
 # aliases for ps {{{
-alias 'ps?'='ps aux | grep'
+alias 'ps?'='ps aux | grep -i'
 # }}}
 
 # alias for ping {{{
@@ -32,8 +34,6 @@ function del () {
 	mv $1 ${trashDir}
 }
 # }}}
-
-alias grep="grep -I"
 
 alias up="uptime"
 
