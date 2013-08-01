@@ -12,3 +12,6 @@
 
 # Require node js version manager
 [[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
+
+# Use the goproj to make every dir with .goproj file become a part of the $GOPATH
+[[ -d $HOME/.goproj ]] && [[ -f $HOME/.goproj/goproj.sh ]] && source "$HOME/.goproj/goproj.sh"
