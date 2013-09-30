@@ -12,8 +12,8 @@
 	bra = branch -a
 	ps = push
 	pso = push origin
-	pl = pull --no-ff
-	plo = pull --no-ff origin
+	pl = pull
+	plo = pull origin
 	ft = fetch
 	fto = fetch -p origin
 [user]
