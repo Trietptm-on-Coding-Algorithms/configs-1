@@ -24,7 +24,9 @@ alias rake='noglob rake'
 
 # alias for spartan servers {{{
 spServer="$HOME/Projects/tap4fun/server-alias/sp.server"
+sp2Server="$HOME/Projects/tap4fun/server-alias/sp2.server"
 [[ -r $spServer ]] && source $spServer
+[[ -r $sp2Server ]] && source $sp2Server
 # }}}
 
 # delete file or directory to ~/lost+found {{{
