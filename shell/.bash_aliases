@@ -50,8 +50,6 @@ function start() {
 	done
 }
 
-alias add-ssh="ssh-add ~/.ssh/id_rsa"
-
 # Get ip address only {{{
 # e.g. `getip en0`
 function getip() {
