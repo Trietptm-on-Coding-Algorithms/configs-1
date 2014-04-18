@@ -18,6 +18,10 @@ alias 'ps?'='ps aux | grep -i'
 alias p="ping"
 # }}}
 
+# alias for open {{{
+alias o="open"
+# }}}
+
 # fix rake bug on zsh {{{
 alias rake='noglob rake'
 # }}}

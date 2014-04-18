@@ -7,8 +7,11 @@
 # Add user bin PATH
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
 
+# Add user bin PATH
+[[ -d /usr/local/bin ]] && PATH=/usr/local/bin:$PATH
+
 # Add GVM into a shell session
-[[ -f $HOME/.gvm/scripts/gvm ]] && source "$HOME/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Require node js version manager
 [[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
