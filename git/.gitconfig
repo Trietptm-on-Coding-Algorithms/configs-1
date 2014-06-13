@@ -4,7 +4,6 @@
 	prompt = No
 [alias]
 	logger = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	;mer = merge --no-ff
 	co = checkout
 	ca = commit -a
 	s = status
@@ -22,14 +21,8 @@
 [core]
 	excludesfile = /Users/zhuangsirui/.gitignore_global
 	editor = vim
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [push]
-	default = matching
+	default = simple
 [merge]
 	tool = vimdiff
 [color]

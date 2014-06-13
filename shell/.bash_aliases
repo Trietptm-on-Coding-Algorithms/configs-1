@@ -1,5 +1,9 @@
 alias grep="grep -I"
 
+# aliases for task {{{
+alias tk="task"
+# }}}
+
 # aliases for tmux {{{
 alias tn="tmux new -s"
 alias ta="tmux a -t"
@@ -26,13 +30,6 @@ alias o="open"
 alias rake='noglob rake'
 # }}}
 
-# alias for spartan servers {{{
-spServer="$HOME/Projects/tap4fun/server-alias/sp.server"
-sp2Server="$HOME/Projects/tap4fun/server-alias/sp2.server"
-[[ -r $spServer ]] && source $spServer
-[[ -r $sp2Server ]] && source $sp2Server
-# }}}
-
 # delete file or directory to ~/lost+found {{{
 function del () {
 	trashDir="${HOME}/lost+found/"
@@ -45,7 +42,7 @@ alias up="uptime"
 
 function start-server () {
 	[ $1 = 'mysql' ] && mysql.server start && echo "MySQL start"
-	[ $1 = 'redis' ] && redis-server /etc/redis/default.conf && echo "Redis start"
+	[ $1 = 'redis' ] && redis-server /usr/local/etc/redis.conf && echo "Redis start"
 }
 
 function start() {
