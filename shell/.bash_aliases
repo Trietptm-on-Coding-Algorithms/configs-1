@@ -43,6 +43,7 @@ alias up="uptime"
 function start-server () {
 	[ $1 = 'mysql' ] && mysql.server start && echo "MySQL start"
 	[ $1 = 'redis' ] && redis-server /usr/local/etc/redis.conf && echo "Redis start"
+	[ $1 = 'mongodb' ] && mongod --config /usr/local/etc/mongod.conf && echo "Mongodb start"
 }
 
 function start() {
