@@ -19,3 +19,6 @@
 # Use the goproj to make every dir with .goproj file become a part of the $GOPATH
 #[[ -d $HOME/.goproj ]] && [[ -f $HOME/.goproj/goproj.sh ]] && source "$HOME/.goproj/goproj.sh"
 [[ -s "/Users/zhuangsirui/.gvm/scripts/gvm" ]] && source "/Users/zhuangsirui/.gvm/scripts/gvm"
+
+# autojump setting
+#[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
