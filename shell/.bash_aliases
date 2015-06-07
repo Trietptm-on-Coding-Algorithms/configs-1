@@ -58,3 +58,14 @@ function getip() {
 	ifconfig | grep "inet " | awk '{ print $2 }'
 }
 # }}}
+
+#
+# Qu Jing iTerm & Terminal Setup Script
+# version 0.4
+# Felix Ding
+# Nov 18, 2014
+#
+function start-qujing {
+  export http_proxy='http://theironislands.f.getqujing.net:48057'
+  export HTTPS_PROXY='http://theironislands.f.getqujing.net:48057'
+}
