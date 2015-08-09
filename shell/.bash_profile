@@ -1,8 +1,6 @@
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Add RVM to PATH for scripting
-[[ -d $HOME/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin
 
 # Add user bin PATH
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
@@ -11,14 +9,13 @@
 [[ -d /usr/local/bin ]] && PATH=$PATH:/usr/local/bin
 
 # Add GVM into a shell session
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+#[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Require node js version manager
 [[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
 
-# Use the goproj to make every dir with .goproj file become a part of the $GOPATH
-#[[ -d $HOME/.goproj ]] && [[ -f $HOME/.goproj/goproj.sh ]] && source "$HOME/.goproj/goproj.sh"
-[[ -s "/Users/zhuangsirui/.gvm/scripts/gvm" ]] && source "/Users/zhuangsirui/.gvm/scripts/gvm"
-
 # autojump setting
 #[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -d $HOME/.gip ]] && source $HOME/.gip/gip.sh
