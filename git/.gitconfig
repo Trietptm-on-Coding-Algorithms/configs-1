@@ -17,7 +17,7 @@
 	fto = fetch -p origin
 [user]
 	name = Zhuang Sirui
-	email = siriusibunny@gmail.com
+	email = zhuangsirui@gmail.com
 [core]
 	excludesfile = /Users/zhuangsirui/.gitignore_global
 	editor = vim
@@ -36,3 +36,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

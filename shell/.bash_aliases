@@ -11,7 +11,7 @@ alias t="tmux"
 # }}}
 
 # aliases for git {{{
-alias gd="git diff | tig"
+alias gd="git diff"
 # }}}
 
 # aliases for ps {{{
@@ -29,6 +29,8 @@ alias o="open"
 # fix rake bug on zsh {{{
 alias rake='noglob rake'
 # }}}
+
+alias next='itunes next'
 
 # delete file or directory to ~/lost+found {{{
 function del () {

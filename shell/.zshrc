@@ -85,3 +85,4 @@ function reload() {
 }
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "/Users/zhuangsirui/.gvm/scripts/gvm" ]] && source "/Users/zhuangsirui/.gvm/scripts/gvm"
