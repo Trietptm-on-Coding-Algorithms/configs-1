@@ -5,3 +5,5 @@ export EDITOR=vim
 [[ -r "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
