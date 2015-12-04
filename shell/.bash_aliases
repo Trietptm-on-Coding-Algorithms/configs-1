@@ -61,13 +61,7 @@ function getip() {
 }
 # }}}
 
-#
-# Qu Jing iTerm & Terminal Setup Script
-# version 0.4
-# Felix Ding
-# Nov 18, 2014
-#
-function start-qujing {
-  export http_proxy='http://theironislands.f.getqujing.net:48057'
-  export HTTPS_PROXY='http://theironislands.f.getqujing.net:48057'
+function start-agentwho {
+  export HTTP_PROXY='http://h1.agentwho.net:50246'
+  export HTTPS_PROXY='http://h1.agentwho.net:50246'
 }

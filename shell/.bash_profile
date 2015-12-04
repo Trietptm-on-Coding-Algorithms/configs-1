@@ -21,3 +21,8 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 [[ -d $HOME/.gip ]] && source $HOME/.gip/gip.sh
+
+export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
+
+export GOPATH="$HOME/.golib:$HOME/Projects/Go"
+export PATH="$PATH:$HOME/.golib/bin:$HOME/Projects/Go/bin"
