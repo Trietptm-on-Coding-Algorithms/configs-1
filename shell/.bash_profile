@@ -9,7 +9,7 @@ command_exists () {
 [[ -d /usr/local/bin ]] && PATH=$PATH:/usr/local/bin
 
 # Add GVM into a shell session
-#[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Require node js version manager
 [[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
