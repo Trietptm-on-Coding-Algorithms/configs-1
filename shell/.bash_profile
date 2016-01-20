@@ -1,6 +1,6 @@
-# Load RVM into a shell session *as a function*
-
-# Add RVM to PATH for scripting
+command_exists () {
+	type "$1" &> /dev/null ;
+}
 
 # Add user bin PATH
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
@@ -15,7 +15,9 @@
 [[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
 
 # autojump setting
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+if command_exists brew; then
+	[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+fi
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
