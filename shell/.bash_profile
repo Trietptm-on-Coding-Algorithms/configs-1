@@ -12,7 +12,8 @@ command_exists () {
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Require node js version manager
-[[ -r $HOME/.nvm/nvm.sh ]] && source "$HOME/.nvm/nvm.sh"
+[[ -d $HOME/.nvm ]] && export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # autojump setting
 if command_exists brew; then
@@ -27,4 +28,6 @@ fi
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 
 export GOPATH="$HOME/.golib:$HOME/Projects/Go"
-export PATH="$PATH:$HOME/.golib/bin:$HOME/Projects/Go/bin"
+[[ -d $HOME/.golib ]] && export PATH="$PATH:$HOME/.golib/bin"
+[[ -d $HOME/Projects/Go/bin ]] && export PATH="$PATH:$HOME/Projects/Go/bin"
+[[ -d $HOME/.composer/vendor/bin ]] && export PATH="$PATH:$HOME/.composer/vendor/bin"
