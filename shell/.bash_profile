@@ -1,6 +1,8 @@
 # Load RVM into a shell session *as a function*
 
-# Add RVM to PATH for scripting
+# Set utf8
+export LANG='UTC-8'
+export LC_ALL='en_US.UTF-8'
 
 # Add user bin PATH
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
@@ -19,8 +21,6 @@
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-[[ -d $HOME/.gip ]] && source $HOME/.gip/gip.sh
 
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 

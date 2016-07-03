@@ -62,6 +62,6 @@ function getip() {
 # }}}
 
 function start-agentwho {
-  export HTTP_PROXY='http://h1.agentwho.net:50246'
-  export HTTPS_PROXY='http://h1.agentwho.net:50246'
+  export HTTP_PROXY='http://h1.agentwho.net:59390'
+  export HTTPS_PROXY='http://h1.agentwho.net:59390'
 }
