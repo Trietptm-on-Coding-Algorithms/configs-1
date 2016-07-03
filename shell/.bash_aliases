@@ -61,10 +61,6 @@ function getip() {
 }
 # }}}
 
-command_exists () {
-	type "$1" &> /dev/null ;
-}
-
 function start-agentwho {
   export HTTP_PROXY='http://h1.agentwho.net:59390'
   export HTTPS_PROXY='http://h1.agentwho.net:59390'

@@ -18,6 +18,9 @@ export LC_ALL='en_US.UTF-8'
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # autojump setting
+command_exists () {
+	type "$1" &> /dev/null ;
+}
 if command_exists brew; then
 	[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 fi
